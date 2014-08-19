@@ -13,7 +13,6 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #555;
-    padding-top: 150px;
     
 	background-image: url(../img/bg-vcard-blue.jpg);
 	background-repeat: no-repeat;
@@ -72,13 +71,17 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
+hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 0.5em 0;
     padding: 0;
+}
+
+.container {
+    margin-bottom: 15px;
 }
 
 .w {

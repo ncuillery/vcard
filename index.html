@@ -150,10 +150,28 @@
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 	<script>
-	$('#myTab a').click(function (e) {
-	  e.preventDefault()
-	  $(this).tab('show')
-	})	
+        $(document).ready(function(){
+            $('#myTab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            var MARGIN = 15;
+            var resize = function() {
+                var new_margin = Math.ceil(($(window).height() - $('.container').height()) / 2);
+                if(new_margin < MARGIN) {
+                    new_margin = MARGIN;
+                }
+                $('.container').css('margin-top', new_margin + 'px');
+            }
+
+            $(window).resize(function() {
+                resize();
+            });
+            resize();
+
+        });
+
 	</script>    
     
   </body>
