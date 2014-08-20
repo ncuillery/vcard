@@ -45,7 +45,7 @@ p {
 
 /* Links */
 a {
-    color: #1abc9c;
+    color: #7b7b7b;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -57,7 +57,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: #1abc9c;
     text-decoration: none;
     outline: 0;
 }
@@ -93,12 +93,12 @@ hr {
 }
 
 
-.col-md-4 {
+.col-sm-4 {
 	padding-left: 0px;
 	padding-right: 0px;
 }
 
-.col-md-8 {
+.col-sm-8 {
 	padding-left: 0px;
 	padding-right: 0px;
 }
